@@ -6,7 +6,7 @@ def get_principal_growth(i, Cs):
 
 def get_compound_growth(now_n, total_n, Cs):
     total_cash = 0
-    for n in range(now_n-now_n, total_n-now_n):
+    for n in range(now_n+1):
         total_cash += Cs * Gc * pow(Gs, n)
     return total_cash
 
