@@ -1,5 +1,5 @@
 Gs = 1.1
-Gc = 0.07
+Gc = 0.061
 
 def get_principal_growth(i, Cs):
     return Cs * pow(Gs, i)
@@ -14,11 +14,11 @@ def get_compound_growth(now_n, total_n, Cs):
 
 
 def main():
-    N = 3
+    N = 4
     total = 0
     cost = 0
     for i in range(N):
-        Cs = 4.3*1
+        Cs = 4.3*8
         cost += Cs/Gc
         principal_growth = get_principal_growth(i, Cs)
         compound_growth = get_compound_growth(i, N, Cs)
